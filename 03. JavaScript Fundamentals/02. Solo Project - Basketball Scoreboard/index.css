@@ -1,8 +1,89 @@
-body {
+* {
+    padding: 0;
     margin: 0;
+    border-radius: 2%;
+}
+
+@font-face {
+    font-family: "digital";
+    src: url("./fonts/DS-DIGI.TTF") format("truetype");
+    /* font-weight: normal;
+    font-style: normal; */
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border-radius: 8%;
+    transition: all ease 0.3s;
 }
 
 .container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    background: greenyellow;
+    padding: 24px 36px;
+}
+.game {
+    display: flex;
+    gap: 42px;
+}
+
+.team {
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.score {
+    font-family: 'digital';
+    font-size: 96px;
+    background: rgb(24, 23, 23);
+    color: aliceblue;
+    text-align: center;
+    padding: 36px 0px;
+    margin: 12px 0 24px 0;
+}
+
+.control {
+    background: whitesmoke;
+    border: none;
+    padding: 12px 24px;
+    margin-inline: 4px;
+    cursor: grab;
+}
+
+.control:hover {
+    color: whitesmoke;
+    background: rgb(24, 23, 23);
+    /* box-shadow: 4px 6px; */
+}
+
+#new-game {
+    background: none;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 24px 0px 0px 0px;
+    padding: 12px 36px;
+    cursor: grab;
+}
+
+#new-game:hover {
+    background: whitesmoke;
+    color: greenyellow;
 }
